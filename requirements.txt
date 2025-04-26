@@ -1,7 +1,16 @@
-streamlit==1.32.2
-torch==2.2.2
-torchvision==0.17.2
-diffusers==0.27.2
-transformers==4.39.3
-Pillow==10.2.0
-huggingface_hub==0.23.2
+# --- Core Libraries ---
+streamlit==1.32.2         # For building the web app
+Pillow==10.2.0             # For image handling and download
+
+# --- PyTorch Framework ---
+torch==2.2.2               # Core deep learning engine compatible with Python 3.12
+torchvision==0.17.2        # For image transformations (good for future extensions too)
+
+# --- Hugging Face Ecosystem ---
+diffusers==0.27.2          # For StableDiffusionPipeline
+transformers==4.39.3       # For text encoder and tokenizer support
+huggingface_hub==0.23.2    # To pull model from Hugging Face repo easily
+accelerate==0.28.0         # For optimized model loading and memory management
+
+# --- Optional but Recommended (for Hugging Face smooth ops) ---
+safetensors==0.4.2         # For faster and safer loading of model.safetensors
